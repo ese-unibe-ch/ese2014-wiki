@@ -27,21 +27,23 @@ public class SampleServiceImpl implements SampleService {
             throw new InvalidUserException("Sorry, ESE is not a valid name");   // throw exception
         }
 
+
+        Address address = new Address();
+        address.setStreet("TestStreet");
+        
         User user = new User();
         user.setFirstName(signupForm.getFirstName());
         user.setEmail(signupForm.getEmail());
         user.setLastName(signupForm.getLastName());
+        user.setAddress(address);
         
-        Address add = new Address();
-        add.setStreet("TestStreet");
-        add.setUser(user);
-        
+        address = addDao.save(address);  
         user = userDao.save(user);   // save object to DB
-        add = addDao.save(add);  
         
         
-        Iterable<Address> addresses = addDao.findAll();  // find all 
-        Address anAddress = addDao.findOne((long)3); // find by ID
+        
+        // Iterable<Address> addresses = addDao.findAll();  // find all 
+        // Address anAddress = addDao.findOne((long)3); // find by ID
         
         
         signupForm.setId(user.getId());

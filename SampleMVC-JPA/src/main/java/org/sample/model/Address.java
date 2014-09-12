@@ -15,8 +15,6 @@ public class Address {
 
 	    private String street;
 	    
-	    @ManyToOne          // always specify the type of relationship:  ManyToMany, OneToOne, ManyToOne, 
-	    private User user;
 
 
 		public Long getId() {
@@ -33,14 +31,6 @@ public class Address {
 
 		public void setStreet(String street) {
 			this.street = street;
-		}
-
-		public User getUser() {
-			return user;
-		}
-
-		public void setUser(User u) {
-			this.user = u;
 		}
 	    
 	    

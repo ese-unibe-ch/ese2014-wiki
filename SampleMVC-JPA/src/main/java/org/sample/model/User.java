@@ -3,6 +3,7 @@ package org.sample.model;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.persistence.OneToOne;
 
 
 @Entity
@@ -15,6 +16,9 @@ public class User {
     private String firstName;
     private String lastName;
     private String email;
+    
+    @OneToOne
+    private Address address; 
     
     public Long getId() {
         return id;
@@ -48,7 +52,15 @@ public class User {
         this.email = email;
     }
 
+	public Address getAddress() {
+		return address;
+	}
 
+	public void setAddress(Address address) {
+		this.address = address;
+	}
+
+    
 	
 	
 }
