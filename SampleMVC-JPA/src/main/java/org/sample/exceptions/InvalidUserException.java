@@ -1,4 +1,4 @@
-package org.sample.exception;
+package org.sample.exceptions;
 
 public class InvalidUserException extends RuntimeException {
 

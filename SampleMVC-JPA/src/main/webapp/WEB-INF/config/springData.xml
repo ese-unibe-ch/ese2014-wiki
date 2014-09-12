@@ -33,7 +33,7 @@
     </bean>
 
     <!-- SPRING - JPA -->
-    <jpa:repositories base-package="org.sample.dao" entity-manager-factory-ref="entityManagerFactory" />
+    <jpa:repositories base-package="org.sample.model.dao" entity-manager-factory-ref="entityManagerFactory" />
 	<tx:annotation-driven transaction-manager="transactionManager" />
 
     <bean class="org.springframework.orm.jpa.JpaTransactionManager"  id="transactionManager">
@@ -45,7 +45,7 @@
 
     <bean id="entityManagerFactory"  class="org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean">
         <property name="dataSource" ref="mainDataSource" />
-        <property name="packagesToScan" value="org.sample.dao.model"/>
+        <property name="packagesToScan" value="org.sample.model"/>
         <property name="jpaVendorAdapter">
             <bean class="org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter">
                 <property name="generateDdl" value="true"/>

@@ -1,4 +1,4 @@
-package org.sample.dao.model;
+package org.sample.model;
 
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
@@ -12,7 +12,6 @@ public class Address {
 	  @Id
 	    @GeneratedValue
 	    private Long id;
-
 
 	    private String street;
 	    

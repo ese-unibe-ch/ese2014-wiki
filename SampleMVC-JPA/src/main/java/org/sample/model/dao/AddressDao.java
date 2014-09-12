@@ -1,6 +1,6 @@
-package org.sample.dao;
+package org.sample.model.dao;
 
-import org.sample.dao.model.Address;
+import org.sample.model.Address;
 import org.springframework.data.repository.CrudRepository;
 
 

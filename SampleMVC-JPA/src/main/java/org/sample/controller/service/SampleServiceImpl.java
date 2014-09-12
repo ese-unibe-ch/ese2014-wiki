@@ -1,11 +1,11 @@
-package org.sample.service;
+package org.sample.controller.service;
 
-import org.sample.dao.AddressDao;
-import org.sample.dao.UserDao;
-import org.sample.dao.model.Address;
-import org.sample.dao.model.User;
-import org.sample.exception.InvalidUserException;
-import org.sample.model.SignupForm;
+import org.sample.controller.pojos.SignupForm;
+import org.sample.exceptions.InvalidUserException;
+import org.sample.model.Address;
+import org.sample.model.User;
+import org.sample.model.dao.AddressDao;
+import org.sample.model.dao.UserDao;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;

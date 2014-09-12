@@ -1,8 +1,8 @@
-package org.sample.webapp.controller;
+package org.sample.controller;
 
-import org.sample.exception.InvalidUserException;
-import org.sample.model.SignupForm;
-import org.sample.service.SampleService;
+import org.sample.controller.pojos.SignupForm;
+import org.sample.controller.service.SampleService;
+import org.sample.exceptions.InvalidUserException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -44,8 +44,6 @@ public class IndexController {
         }   	
     	return model;
     }
-
-   
     
     @RequestMapping(value = "/security-error", method = RequestMethod.GET)
     public String securityError(RedirectAttributes redirectAttributes) {
