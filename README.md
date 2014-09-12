@@ -1,4 +1,5 @@
-ese2014-wiki
+ ESE 2014
 ============
 
-Read the <a href="wiki/">wiki</a>
+Assignments and material published on the <a href="wiki/">wiki</a>. 
+
