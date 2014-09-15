@@ -1,5 +1,7 @@
 package org.sample.controller;
 
+import javax.validation.Valid;
+
 import org.sample.controller.pojos.SignupForm;
 import org.sample.controller.service.SampleService;
 import org.sample.exceptions.InvalidUserException;
@@ -11,8 +13,6 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
-import javax.validation.Valid;
-
 @Controller
 public class IndexController {
 
@@ -23,7 +23,7 @@ public class IndexController {
     @RequestMapping(value = "/", method = RequestMethod.GET)
     public ModelAndView index() {
     	ModelAndView model = new ModelAndView("index");
-    	model.addObject("signupForm", new SignupForm());
+    	model.addObject("signupForm", new SignupForm());    	
         return model;
     }
 
