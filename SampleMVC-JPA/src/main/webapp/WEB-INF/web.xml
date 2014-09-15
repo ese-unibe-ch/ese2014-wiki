@@ -16,6 +16,7 @@
     	<param-name>contextConfigLocation</param-name>
     	<param-value>
     		/WEB-INF/config/springData.xml
+    		/WEB-INF/config/hdiv.xml
     		/WEB-INF/config/springSecurity.xml
     	</param-value>
 	</context-param>

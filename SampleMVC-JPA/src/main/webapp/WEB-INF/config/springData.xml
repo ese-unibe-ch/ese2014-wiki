@@ -14,8 +14,6 @@
     <context:annotation-config/>
     <context:component-scan base-package="org.sample"/>
     
-     <import resource="hdiv.xml"/>
-
 
     <bean id="mainDataSource" class="com.jolbox.bonecp.BoneCPDataSource" destroy-method="close">
         <property name="driverClass" value="com.mysql.jdbc.Driver" />
