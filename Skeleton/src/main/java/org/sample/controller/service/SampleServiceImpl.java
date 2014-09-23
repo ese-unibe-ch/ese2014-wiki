@@ -29,7 +29,7 @@ public class SampleServiceImpl implements SampleService {
 
 
         Address address = new Address();
-        address.setStreet("TestStreet");
+        address.setStreet("TestStreet-foo");
         
         User user = new User();
         user.setFirstName(signupForm.getFirstName());
@@ -37,9 +37,7 @@ public class SampleServiceImpl implements SampleService {
         user.setLastName(signupForm.getLastName());
         user.setAddress(address);
         
-        address = addDao.save(address);  
         user = userDao.save(user);   // save object to DB
-        
         
         
         // Iterable<Address> addresses = addDao.findAll();  // find all 

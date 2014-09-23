@@ -58,7 +58,7 @@
                 hibernate.cache.region.factory_class = org.hibernate.cache.ehcache.EhCacheRegionFactory
                 hibernate.cache.use_query_cache = true
                 hibernate.generate_statistics = true
-                hibernate.hbm2ddl.auo = create
+                hibernate.hbm2ddl.auto = update
             </value>
   	      
         </property>

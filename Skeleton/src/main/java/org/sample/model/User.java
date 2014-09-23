@@ -1,5 +1,6 @@
 package org.sample.model;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
@@ -17,7 +18,7 @@ public class User {
     private String lastName;
     private String email;
     
-    @OneToOne
+    @OneToOne(cascade = {CascadeType.ALL})
     private Address address; 
     
     public Long getId() {
