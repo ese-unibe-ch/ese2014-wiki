@@ -10,8 +10,7 @@
 <h1>Sign Up Here!</h1>
 
 
-<form:form method="post" modelAttribute="signupForm" action="create" id="signupForm" cssClass="form-horizontal"
-           autocomplete="off">
+<form:form method="post" modelAttribute="signupForm" action="create" id="signupForm" cssClass="form-horizontal"  autocomplete="off">
     <fieldset>
         <legend>Enter Your Information</legend>
 

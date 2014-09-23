@@ -216,7 +216,7 @@
 						<version>6.1.26</version>
 						<configuration>
 							<useTestClasspath>true</useTestClasspath>
-							<contextPath>/sample</contextPath>
+							<contextPath>/Skeleton</contextPath>
 							<stopKey>1</stopKey>
 							<stopPort>9999</stopPort>
 						</configuration>
