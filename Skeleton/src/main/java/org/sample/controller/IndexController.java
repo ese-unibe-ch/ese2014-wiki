@@ -2,9 +2,9 @@ package org.sample.controller;
 
 import javax.validation.Valid;
 
+import org.sample.controller.exceptions.InvalidUserException;
 import org.sample.controller.pojos.SignupForm;
 import org.sample.controller.service.SampleService;
-import org.sample.exceptions.InvalidUserException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.validation.BindingResult;
